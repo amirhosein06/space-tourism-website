@@ -1,0 +1,267 @@
+body{
+    background: url(/starter-code/assets/destination/background-destination-desktop.jpg) !important;
+    background-size: unset !important;
+    background-position: unset !important;
+}
+.data_title{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 14%;
+    color: #fff;
+    font-size: 22px;
+    font-family: Barlow_Condensed;
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+.data_title span{
+    color: #494A53;
+    margin-right: 17px;
+    font-size: 22px;
+    font-family: Barlow_Condensed;
+    font-weight: 700;
+}
+
+/* left side */
+.destination_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.destination_content .left , .destination_content .right{
+    width: 50%;
+}
+.destination_content .left .imgbox{
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 10% 23%;
+}
+.destination_content .left .imgbox img{
+    width: 70%;
+    height: auto;
+}
+
+/* right side */
+.destination_content .right:not(.travel_data .right){
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.destination_menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 9%;
+    height: 35px;
+}
+.destination_menu button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: Barlow_Condensed;
+    margin: 0 15px 0 15px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-bottom: 2px transparent solid;
+}
+.destination_menu button:hover:not(.btn_active){
+    border-bottom: 2px #ebebeba6 solid !important;
+}
+.btn_active{
+    border-bottom: 2px #fff solid !important;
+}
+.title{
+    font-family: bellefaire;
+    font-size: 65px;
+    font-weight: 400;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    color: #fff;
+    margin: 25px 0 18px 0;
+    animation: titleanimit 1s both;
+}
+@keyframes titleanimit {
+    100%{
+        padding-left: 11%;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.descraption{
+    width: 100%;
+    color: #d0d6f9;
+    font-family: Barlow;
+    font-size: 14px;
+    padding-left: 11%;
+    line-height: 25px;
+}
+.descraption::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff52;
+    border-radius: 1px;
+    height: 1px;
+    top: 65%;
+    left: 11%;
+    width: 55%;
+}
+.travel_data{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 11%;
+    margin-top: 60px;
+}
+.travel_data .right , .travel_data .left{
+    width: 30%;
+    color: #fff;
+    font-size: 24px;
+    font-family: bellefaire;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.travel_data .right span , .travel_data .left span{
+    font-family: Barlow_Condensed;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* media query for tablet */
+@media screen and (max-width:1115px) {
+    body{
+        background: url(/starter-code/assets/destination/background-destination-tablet.jpg) !important;
+        background-size: 100% !important;
+        background-position: unset !important;
+        overflow: unset !important;
+    }
+    .data_title{
+        font-size: 30px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .destination_content{
+        flex-direction: column;
+        height: 1800px;
+    }
+    .destination_content .left , .destination_content .right{
+        width: 100%;
+    }
+    .destination_content .right{
+        height: 0%;
+    }
+    .destination_content .left .imgbox{
+        padding: 0;
+    }
+    .destination_content .left .imgbox img{
+        width: 40%;
+        height: auto;
+    }
+    .destination_menu{
+        padding-left: 0;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .destination_menu button{
+        font-size: 24px;
+        margin: 0 30px 0 30px;
+    }
+    .title{
+        animation: titleanimit_tablet 1s both;
+        padding-left: 0;
+        text-align: center;
+        font-size: 90px;
+        margin-top: 30px;
+    }
+    @keyframes titleanimit_tablet {
+        100%{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    .descraption{
+        padding-left: 0;
+        text-align: center;
+        font-size: 23px;
+        line-height: 31px;
+        position: relative;
+    }
+    .descraption::after{
+        top: 138%;
+        left: 20%;
+        width: 60%;
+    }
+    .travel_data{
+        padding-left: 0;
+        justify-content: center;
+    }
+    .travel_data .right , .travel_data .left{
+        height: 60px;
+        width: 30%;
+        text-align: center;
+    }
+    .destination_content .right:not(.travel_data .right){
+        height:500px;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    body{
+        background: url(/starter-code/assets/destination/background-destination-mobile.jpg) !important;
+        background-size: 100% !important;
+        background-position: unset !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
+/* media query for mobile */
+@media screen and (max-width:700px) {
+    .data_title{
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    .destination_content{
+        height: 600px;
+    }
+    .destination_menu{
+        margin-top: 25px;
+    }
+    .destination_menu button{
+        font-size: 17px;
+        margin: 0 10px 0 10px;
+    }
+    .title{
+        font-size: 70px;
+    }
+    .descraption{
+        font-size: 12px;
+        line-height: 24px;
+        position: relative;
+    }
+    .travel_data .right , .travel_data .left{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .destination_content .right:not(.travel_data .right){
+        height:400px;
+    }
+}

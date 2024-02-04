@@ -1,0 +1,322 @@
+body{
+    background: url(/starter-code/assets/crew/background-crew-desktop.jpg) !important;
+    background-size: 100% 100% !important;
+    background-position: unset !important;
+    overflow: hidden;
+}
+.data_title{
+    width: 100%;
+    height: 120px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 14%;
+    color: #fff;
+    font-size: 22px;
+    font-family: Barlow_Condensed;
+    font-weight: 500;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+.data_title span{
+    color: #494A53;
+    margin-right: 17px;
+    font-size: 22px;
+    font-family: Barlow_Condensed;
+    font-weight: 700;
+}
+
+/* content */
+.crew-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+}
+.crew-content .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    padding-left: 14%;
+}
+.crew-content .right{
+    width: 40%;
+    height: 126.5%;
+    position: relative;
+}
+.crew-content .right img{
+    width: 65%;
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+    opacity: 0;
+    animation: person-img-aninmit 1s both;
+}
+@keyframes person-img-aninmit {
+    100%{
+        bottom: 0;
+        opacity: 1;
+    }
+}
+.person{
+    width: 100%;
+    font-family: bellefaire;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 25px 0 15px 0;
+    color: #a3a4ac;
+}
+.person-name{
+    width: 100%;
+    font-family: bellefaire;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    opacity: 0;
+    padding-left: 15px;
+    animation: person-name-aninmit 1s both;
+}
+@keyframes person-name-aninmit {
+    100%{
+        padding-left: 0px;
+        opacity: 1;
+    }
+}
+.descraption{
+    width: 100%;
+    color: #d0d6f9;
+    font-family: Barlow;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 100px 0;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.btns span{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #35383F;
+    cursor: pointer;
+}
+.btns .crew_active{
+    background-color: #fff;
+}
+
+/* media query for tablet */
+@media screen and (max-width:1115px) {
+    body{
+        background: url(/starter-code/assets/crew/background-crew-tablet.jpg) !important;
+        background-size: 100% 110%  !important;
+        background-position: unset !important;
+        overflow: unset !important;
+        height: 1300px;
+    }
+    .data_title{
+        font-size: 26px;
+        padding-left: 10%;
+    }
+    .data_title span{
+        font-size: 26px;
+    }
+    .crew-content{
+        flex-direction: column;
+        height: 900px;
+        justify-content: flex-start;
+    }
+    .crew-content .left{
+        width: 100%;
+        height: 400px;
+        padding-left: 0;
+    }
+    .crew-content .right{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .crew-content .right img{
+        position: unset;
+        width: 55%;
+        bottom: -140px;
+        opacity: 0;
+        animation: person-img-aninmit2 1s both;
+        margin-top: 50px;
+    }
+    @keyframes person-img-aninmit2 {
+        100%{
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+    .person{
+        font-size: 35px;
+        margin: 25px 0 15px 0;
+        text-align: center;
+    }
+    .person-name{
+        font-size: 60px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .descraption{
+        font-size: 23px;
+        line-height: 30px;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+    .btns{
+        justify-content: center;
+        gap: 28px;
+    }
+    .btns span{
+        width: 15px;
+        height: 15px;
+        background-color: #5b606b;
+    }
+}
+@media screen and (max-width:1010px) {
+    body{
+        background: url(/starter-code/assets/crew/background-crew-mobile.jpg) !important;
+        background-size: 100%   !important;
+        background-position: unset !important;
+        overflow: unset !important;
+        background-repeat: no-repeat !important;
+    }
+    .crew-content{
+        height: 1000px;
+    }
+    .crew-content .left{
+        height: 450px;
+        padding-left: 0;
+    }
+    .crew-content .right{
+        height: 550px;
+    }
+    .data_title{
+        margin: 50px 0 0 0;
+    }
+}
+
+/* media query for mobile */
+@media screen and (max-width:700px) {
+    body{
+        height: unset;
+        background-size: 100% 101%  !important;
+        height: 891px;
+    }
+    .data_title{
+        margin: 0;
+    }
+    .crew-content{
+        height: 741px;
+    }
+    .crew-content .left{
+        height: 400px;
+        padding-left: 0;
+        justify-content: flex-start;
+        padding-top: 20px;
+        order: 2;
+    }
+    .crew-content .right{
+        height: 341px;
+        overflow: hidden;
+        order: 1;
+    }
+    .data_title{
+        margin: 0;
+        height: 100px !important;
+        font-size: 20px;
+    }
+    .data_title span{
+        font-size: 20px;
+    }
+    .crew-content .right img{
+        width: 75%;
+    }
+    .person{
+        font-size: 24px;
+        margin: 0px 0 10px 0;
+        text-align: center;
+    }
+    .person-name{
+        font-size: 32px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .descraption{
+        font-size: 15px;
+        line-height: 20px;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+    .btns{
+        gap: 20px;
+    }
+    .btns span{
+        width: 12px;
+        height: 12px;
+    }
+}
+@media screen and (max-width:380px) {
+    .crew-content .right{
+        align-items: flex-end;
+        overflow: unset;
+    }
+}
+@media screen and (max-width:375px) {
+    .person{
+        font-size: 20px;
+        margin: 0px 0 10px 0;
+        text-align: center;
+    }
+    .person-name{
+        font-size: 27px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    .descraption{
+        font-size: 11px;
+        line-height: 17px;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+    .btns{
+        gap: 20px;
+    }
+    .btns span{
+        width: 9px;
+        height: 9px;
+    }
+    body{
+        height: 691px;
+    }
+    .data_title{
+        margin: 0;
+    }
+    .crew-content{
+        height: 541px;
+    }
+    .crew-content .left{
+        height: 200px;
+        padding-left: 0;
+        justify-content: flex-start;
+        padding-top: 60px;
+    }
+    .crew-content .right{
+        height: 341px;
+        overflow: hidden;
+    }
+}
