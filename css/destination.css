@@ -1,5 +1,5 @@
 body{
-    background: url(/starter-code/assets/destination/background-destination-desktop.jpg) !important;
+    background: url(/assets/destination/background-destination-desktop.jpg) !important;
     background-size: unset !important;
     background-position: unset !important;
 }
@@ -147,7 +147,7 @@ body{
 /* media query for tablet */
 @media screen and (max-width:1115px) {
     body{
-        background: url(/starter-code/assets/destination/background-destination-tablet.jpg) !important;
+        background: url(/assets/destination/background-destination-tablet.jpg) !important;
         background-size: 100% !important;
         background-position: unset !important;
         overflow: unset !important;
@@ -224,7 +224,7 @@ body{
 
 @media screen and (max-width:1010px) {
     body{
-        background: url(/starter-code/assets/destination/background-destination-mobile.jpg) !important;
+        background: url(/assets/destination/background-destination-mobile.jpg) !important;
         background-size: 100% !important;
         background-position: unset !important;
         background-repeat: no-repeat !important;
