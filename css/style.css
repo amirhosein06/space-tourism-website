@@ -11,7 +11,7 @@
     src: url('/assets/font/Barlow_Condensed/BarlowCondensed-Light.ttf');;
 }
 body{
-    background: url(//assets/home/background-home-desktop.jpg);
+    background: url(/assets/home/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: 130vw 100vh;
     background-position: 60% 50%;
