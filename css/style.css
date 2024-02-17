@@ -11,7 +11,7 @@
     src: url('/assets/font/Barlow_Condensed/BarlowCondensed-Light.ttf');
 }
 body{
-    background: url(/assets/home/background-home-desktop.jpg);
+    background: url('/assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-size: 130vw 100vh;
     background-position: 60% 50%;
@@ -194,7 +194,7 @@ body{
 @media screen and (max-width:1115px) {
     body{
         padding-top: 0;
-        background: url(/assets/home/background-home-tablet.jpg);
+        background: url('/assets/home/background-home-tablet.jpg');
         background-repeat: no-repeat;
         background-size: 100vw;
     }
@@ -396,7 +396,7 @@ body{
         width: 35px;
         height: 56px;
         position: absolute;
-        background: url(/assets/shared/icon-hamburger.svg);
+        background: url('/assets/shared/icon-hamburger.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -411,7 +411,7 @@ body{
         width: 30px;
         height: 40px;
         position: absolute;
-        background: url(/assets/shared/icon-close.svg);
+        background: url('/assets/shared/icon-close.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -451,7 +451,7 @@ body{
 
 @media screen and (max-width:455px) {
     body{
-        background: url(/assets/home/background-home-mobile.jpg);
+        background: url('/assets/home/background-home-mobile.jpg');
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
         background-position: center;

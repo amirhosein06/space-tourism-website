@@ -1,5 +1,5 @@
 body{
-    background: url(/assets/technology/background-technology-desktop.jpg) !important;
+    background: url('/assets/technology/background-technology-desktop.jpg') !important;
     background-size: unset !important;
     background-position: unset !important;
     overflow: hidden;
@@ -121,7 +121,7 @@ body{
 /* media query for tablet */
 @media screen and (max-width:1115px) {
     body{
-        background: url(/assets/technology/background-technology-tablet.jpg) !important;
+        background: url('/assets/technology/background-technology-tablet.jpg') !important;
         background-size: 100% 100% !important;
         background-position: unset !important;
         overflow: unset !important;
@@ -206,7 +206,7 @@ body{
 }
 @media screen and (max-width:500px) {
     body{
-        background: url(/assets/technology/background-technology-mobile.jpg) !important;
+        background: url('/assets/technology/background-technology-mobile.jpg') !important;
         background-size: 100% 100% !important;
         background-position: unset !important;
         overflow: hidden !important;
