@@ -1,14 +1,14 @@
 @font-face {
     font-family: Barlow;
-    src: url('/assets/font/Barlow/Barlow-Regular.ttf');;
+    src: url('/assets/font/Barlow/Barlow-Regular.ttf');
 }
 @font-face {
     font-family: bellefaire;
-    src: url('/assets/font/Bellefair/Bellefair-Regular.ttf');;
+    src: url('/assets/font/Bellefair/Bellefair-Regular.ttf');
 }
 @font-face {
     font-family: Barlow_Condensed;
-    src: url('/assets/font/Barlow_Condensed/BarlowCondensed-Light.ttf');;
+    src: url('/assets/font/Barlow_Condensed/BarlowCondensed-Light.ttf');
 }
 body{
     background: url(/assets/home/background-home-desktop.jpg);
